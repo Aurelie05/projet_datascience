@@ -36,12 +36,12 @@ const Footer = () => {
           <p>INP-HB CENTRE, Yamoussoukro, Côte d'Ivoire</p>
           <p><strong>Email:</strong>  datascience@datascience.inphb.ci</p>
           <p><strong>Contact:</strong> +225 27 2349 3509 | +225 05 0004 8569</p>
-          <div className="social-icons">
+          {/* <div className="social-icons">
             <FaFacebookF />
             <FaTwitter />
             <FaPinterestP />
             <FaYoutube />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="footer-bottom">

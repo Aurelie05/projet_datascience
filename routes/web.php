@@ -27,8 +27,8 @@ Route::middleware('auth')->group(function () {
 Route::get('/formation', function () {
     return Inertia::render('Formation'); 
 });
-Route::get('/presentation', function () {
-    return Inertia::render('Presentation'); 
+Route::get('/condition', function () {
+    return Inertia::render('Condition'); 
 });
 
 require __DIR__.'/auth.php';

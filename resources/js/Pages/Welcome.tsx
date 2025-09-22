@@ -46,7 +46,7 @@ export default function Welcome({
 
     return (
         <Guest>
-        <Head title="Welcome" />
+        {/* <Head title="Welcome" /> */}
            <div className='welcomecontainer'>
                 <div className='element1'>
                     <img src={image} alt="" />

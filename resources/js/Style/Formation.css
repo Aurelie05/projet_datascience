@@ -314,11 +314,7 @@ color: #2d6cdf;
       /* width: 40%; */
       display: none;
     }
-    .tabs-menu{
-      /* width: 80%; */
-      /* border: 2px solid; */
-      /* margin: 0 auto; */
-    }
+   
     .tabs-menu .active {
       /* width: 140px; */
       /* font-size: 10px; */

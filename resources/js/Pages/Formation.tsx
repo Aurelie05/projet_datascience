@@ -3,8 +3,10 @@ import Guest from '@/Layouts/GuestLayout';
 import image from "@/Assets/13.png"
 import "@/Style/Formation.css"
 import directeur_img from '@/Assets/Dir-idsi.jpg'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import photo from '@/Assets/1.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Footer from '@/Layouts/Footer';
 
 type TabKey = 'research' | 'strategy' | 'report';
@@ -64,6 +66,13 @@ const Formation = () => {
       };
     
       const current = tabs[activeTab];
+
+      useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          once: false, // ou true si tu veux que ça s'anime une seule fois
+        });
+      }, []);
     
   return (
 
@@ -88,17 +97,17 @@ const Formation = () => {
                         <span className="plus">+</span>
                     </a>
                 </div>
-                <div className='dataimage'>
+                <div className='dataimage' >
                     <img src={image} alt="" />
                 </div>
                 
             </div>
-            <section className="directeur-section">
-                <div className="directeur-container">
+            <section className="directeur-section" >
+                <div className="directeur-container" data-aos="zoom-out" data-aos-once="false">
                     <div className="directeur-image">
                         <img src={directeur_img} alt="Directeur" />
                     </div>
-                    <div className="directeur-texte">
+                    <div className="directeur-texte" >
                         <p className="section-label">Mot du Directeur</p>
                         <h2 className="section-title">Notre Vision pour l’Avenir</h2>
                         <div className="quote-icon">“</div>
